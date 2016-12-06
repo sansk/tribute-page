@@ -114,7 +114,7 @@
     }
 }
 .navbar {
-    position: absolute !important;
+    position: absolute;
     top: 50%;
     right: 1%;
     margin: 5px; 
@@ -231,8 +231,8 @@ img.gall:hover {
         height: 75%;
         width: 75%;
         display: block;
-  margin-right: auto;
-  margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -242,4 +242,39 @@ img.gall:hover {
 footer {
     background-color: #DCDCDC;
     font-weight: 800;
+}
+
+/**************************************************************************************
+           Sticky Menu Section
+***************************************************************************************/
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    margin: 0;
+    z-index: 10;
+    perspective: initial;
+}
+
+.sticky-navbar-header {
+    display: none;
+}
+
+.sticky-navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    display: block!important;
+    visibility: visible!important;
+}
+.sticky-ul {
+    float:none;
+    margin: auto;
+    width: 55%;
+}
+.sticky-li {
+    float: left!important;    
 }

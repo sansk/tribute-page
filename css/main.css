@@ -214,11 +214,18 @@ img.gall {
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    border: 2px solid rgba(0,0,0,0.5);
+    padding: 5px;
     margin-bottom:20px;
+     -webkit-transition: -webkit-transform .15s linear;
+    transition: transform .15s linear;
 }
 img.gall:hover {
-  filter: none; 
-  -webkit-filter: grayscale(0); 
+    -webkit-filter: grayscale(0); 
+                 filter: none; 
+    transform: scale(2) rotate(0deg) !important;
+    position: relative;
+    z-index: 5;
 }
 @media screen and (max-width: 990px) {
     img.gall {
@@ -230,6 +237,41 @@ img.gall:hover {
     }
 }
 
+#gallery img.gall {
+    -webkit-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+                   transform: rotate(-15deg);
+}
+#gallery .col-md-3:nth-child(odd) img.gall {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+  position: relative;
+  top: 20px;
+    left: 200px;
+}
+#gallery .col-md-3:nth-child(2n) img.gall {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
+    position: relative;
+}
+#gallery .col-md-3:nth-child(3n) img.gall {
+  -webkit-transform: none;
+  -moz-transform: none;
+    transform: none;
+  position: relative;
+  top: 50px;
+    left: -190px;
+}
+#gallery .col-md-3:nth-child(4n) img.gall {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  position: relative;
+  left: -250px;
+    bottom: 30px;
+}
 /**************************************************************************************
            Footer Section
 ***************************************************************************************/
@@ -270,4 +312,5 @@ footer {
 .sticky-li {
     float: left!important;    
 }
+
 

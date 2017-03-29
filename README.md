@@ -1,6 +1,6 @@
 # Tribute Page
 
-A Tribute Page dedicated to Mahendra Singh Dhoni aka MSD, Indian Cricketer.
+[A Tribute Page dedicated to Mahendra Singh Dhoni aka MSD, Indian Cricketer](https://sansk.github.io/tribute-page/).
 
 Developed as oneof the Project for 'Front-end Development Certification' by 'freecodecamp.com'
 
